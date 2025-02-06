@@ -1,0 +1,92 @@
+
+.HeroInfo{
+    width: 100%;
+    height: fit-content;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 40px;
+}
+
+.TextoInfo{
+    width: 40%;
+    text-align: left;
+    animation-name: aniHeroTexto;
+    animation-duration: .8s;
+}
+@keyframes aniHeroTexto{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1.5;
+        transform: translateX(0);
+    }
+}
+.TextoInfo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vw;
+    color: #000000ca;
+    line-height: 90%;
+    margin-bottom: 18px;
+}
+.TextoInfo p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 120%;
+    color: #0000008a;
+    font-weight: lighter;
+    margin-bottom: 18px;
+}
+.imagemInfo{
+    width: 40%;
+    
+    animation-name: aniHeroImg;
+    animation-duration: .8s;
+}
+@keyframes aniHeroImg{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1.5;
+        transform: translateX(0);
+    }
+}
+.imagemInfo img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.Botao, .Botao2{
+    background-color: #00a59a;
+    color: white;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    border: 1px solid #00a59a;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.Botao:hover{
+    background-color: #005c56;
+    border: 1px solid #005c56;
+}
+.Botao2{
+    background-color: transparent;
+    color: #000;
+    border: 1px solid rgba(200, 200, 200, 0.7);
+    transition: 0.4s;
+}
+.Botao2:hover{
+    background-color: rgba(200, 200, 200, 0.8);
+    color: black;
+    transition: 0.4s;
+}
