@@ -8,25 +8,30 @@ import img from '../assets/img/bro.png';
 function Login(){
     return(
         <div className="Login">
-            <img className="imagemLogin" src={img} alt="Imagem Saude e bem-estar Login"/>
+            <div className="contenImage">
+                <img src={img} alt="Imagem Saude e bem-estar Login"/>
+            </div>
+
             <div className="ContainerForm">
                 <h1>Saúde e Bem-Estar</h1>
                 <p>Acesse ou crie sua conta</p>
                 <form>
-                    <FloatingLabel controlId="EmailId" label="E-mail: " >
+                    <FloatingLabel controlId="EmailId" label="E-mail " >
                         <Form.Control type="email" placeholder="name@exemplo.com" />
                     </FloatingLabel>
 
-                    <FloatingLabel controlId="NomeId" label="Nome: " >
+                    <FloatingLabel controlId="NomeId" label="Nome " >
                         <Form.Control type="text" placeholder="Fulano..." />
                     </FloatingLabel>
 
                     <FloatingLabel controlId="SenhaId" label="Senha" >
                         <Form.Control type="password" placeholder="Senha" />
                     </FloatingLabel>
+                    <br/>
 
-                    <Form.Control type="submit"/>
+                    <Form.Control type="submit" value="Entrar" />
                     <Form.Control type="button" value={"Cadastrar"}/>
+
 
                     <input type="checkbox" id="SaveId" name="Save"/>
                     &nbsp;&nbsp;

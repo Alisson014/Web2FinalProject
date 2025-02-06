@@ -5,12 +5,19 @@
     gap: 0;
     height: 100vh;
 }
-.imagemLogin{
+.contenImage{
+    overflow: hidden;
     width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenImage img{
+    height: 100%;
 }
 
 .ContainerForm{
-    background-color: #f3f3f3;
+    background-color: #f6f6f6;
     padding-left: 80px;
     width: calc(70%);
     display: flex;
@@ -33,6 +40,7 @@
     width: 380px;
     opacity: 0.8;
     margin: 10px 0px 10px 0px;
+    border: 2px solid #00000093;
 }
 .form-control[type="text"]:focus,
 .form-control[type="email"]:focus,
@@ -45,6 +53,7 @@
     border: 2px solid #00a59a;
     color: #fff;
     margin: 10px 0px 10px 0px;
+    padding: 10px 10px;
     transition: .5s;
 }
 .form-control[type="submit"]:hover{
@@ -56,6 +65,7 @@
     background-color: transparent;
     color: #00a59a;
     margin: 10px 0px 10px 0px;
+    padding: 10px 10px;
     transition: .5s;
 }
 .form-control[type="button"]:hover{
@@ -63,11 +73,12 @@
     color: #fff;
     transition: .5s;
     opacity: .6;
+    padding: 10px 10px !important;
 }
 
 .ContainerForm a{
     font-family: Arial, Helvetica, sans-serif;
-    color: #000;
+    color: #00746c;
     text-decoration: none;
 }
 .ContainerForm a:hover{
